@@ -8,9 +8,9 @@
         $locationProvider.html5Mode(true)
 
         var myTheme = {
-            '50': '#e9f7f9',
-            '100': '#d5eff4',
-            '200': '#c0e8ef',
+            '50': '#363A36',
+            '100': '#F7B233',
+            '200': '#72716D',
             '300': '#ace0ea',
             '400': '#97d9e5',
             '500': '#83d1e0',
@@ -23,6 +23,8 @@
             'A400': '#ffffff',
             'A700': '#2da0b6'
         };
+
+      
         $mdThemingProvider
             .definePalette('myTheme',
                 myTheme);

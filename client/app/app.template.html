@@ -1,126 +1,28 @@
-<div class="jumbotron">
-
-    <img id="logo" src="../images/MG-Logo.svg" alt="">
-    <div class="md-toolbar-tools" layout-align="end center">
-        <md-button aria-label="Projects" ng-click="$ctrl.goToProjects()">
-            Work
-        </md-button>
-        <md-button aria-label="About">
-            <md-tooltip md-direction="bottom">Coming Soon</md-tooltip>
-            About
-        </md-button>
-        <md-button aria-label="About">
-            <md-tooltip md-direction="bottom">Coming Soon</md-tooltip>
-
-            Contact
-        </md-button>
+<header class="header">
+    <div class="navbars">
+        <img src="../images/urban_wagon_logo.png" alt="" id="logo">
+        <div class="button-row">
+            <md-button aria-label="About" class="md-raised nav-button">
+                <a href="http://www.murphgrainger.com/" target="_blank">
+                    Developer Site
+                </a>
+            </md-button>
+            <md-button aria-label="Code" class="md-raised nav-button">
+                <a href="https://github.com/murphgrainger/Urban-Wagon" target="_blank">
+                    App Code
+                </a>
+            </md-button>
+        </div>
     </div>
 </div>
-<md-content class="about section" id="about">
-    <h2>My name is Murph.</h2>
-    <p>I'm a web developer, tinkerer, golfer, doer, skier, organizer, videographer, barbequer, and always looking for a new adventure. I believe in a balance between efficiency and exploration. My motto: work hard but work smart.
-    </p>
-</md-content>
-<md-content class="md-padding" layout-xs="column" layout-sm="row" layout-md="row" layout-lg="row" layout-xl="row" layout-align="center center" id="projects">
-    <div flex-gt-md="30">
-        <md-card>
-            <img ng-src="../images/lw2.png" class="md-card-image" alt="Washed Out">
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">LineWaiter
-                    </span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-                <p>
-                    Pay someone else to wait in line for you. Whether it's Sunday brunch at Snooze or Friday afternoon at the DMV, request a time and place and skip the line!
-                </p>
-                <p class="technologies">JavaScript ES6, jQuery, AJAX, Google Maps API, Node.js, Express, Knex.js, PostgreSQL, Handlebars.js, CSS/Bootstrap</p>
-            </md-card-content>
-            <md-card-actions layout="row" layout-align="end center">
-                <md-button class="md-icon-button" aria-label="Github" href=" https://github.com/line-waiter/waiter-client" target="_blank">
-                    <md-tooltip md-direction="bottom">Code</md-tooltip>
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                </md-button>
-                <md-button class="md-icon-button" aria-label="Share" href="https://www.youtube.com/watch?v=R20u4MGYQ7s" target="_blank">
-                    <md-tooltip md-direction="bottom">Video Demo</md-tooltip>
-                    <i class=" fa fa-video-camera fa-2x" aria-hidden=" true"></i>
-                </md-button>
-                <md-button href="https://line-waiter.firebaseapp.com/" target="_blank">Open App</md-button>
-            </md-card-actions>
-        </md-card>
-    </div>
-    <div flex-gt-md="30">
-        <md-card>
-            <img ng-src="../images/gnp5.png" class="md-card-image" alt="Washed Out">
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">Golf New Places</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-                <p>
-                    Stop repeatedly playing the same course. GNP simplifies your search to find new courses to play by filtering public/private, region, and distance.
-                </p>
-                <p class="technologies">JavaScript ES6, jQuery, AJAX, CSS/Materialize, Google Geocoding API, Google Places API, Swing by Swing API</p>
-            </md-card-content>
-            <md-card-actions layout="row" layout-align="end center">
-                <md-button class="md-icon-button" aria-label="Github" href="https://github.com/murphgrainger/Golf-New-Places" target="_blank">
-                    <md-tooltip md-direction="bottom">Code</md-tooltip>
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                </md-button>
-                <md-button class="md-icon-button" aria-label="Share" href="https://www.youtube.com/watch?v=o2oTEgEFpXI&feature=youtu.be" target="_blank">
-                    <md-tooltip md-direction="bottom">Video Demo</md-tooltip>
-                    <i class=" fa fa-video-camera fa-2x" aria-hidden=" true"></i>
-                </md-button>
-                <md-button href="https://golf-new-places.firebaseapp.com/" target="_blank">Open App</md-button>
-            </md-card-actions>
-        </md-card>
-    </div>
-    <div flex-gt-md="30">
-        <md-card>
-            <img ng-src="/images/johnny.png" class="md-card-image" alt="Washed Out">
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">Johnny Four</span>
-                </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-                <p>
-                    Experience life through the eyes of a robot. Johnny Four is a Rasperry Pi-powered spy-bot drivable with keyboard controls while seeing live streaming video.
-                </p>
-                <p class="technologies">
-                    Rasperry Pi, AngularJS, Node.js, Express, Johnny Five, Socket.io, PostgreSQL, Knex.js, h264 Live Streamer, Broadway.js</p>
-            </md-card-content>
-            <md-card-actions layout="row" layout-align="end center">
-                <md-button class="md-icon-button" aria-label="Github" href="https://github.com/Johnny-Four/johnny-ssr" target="_blank">
-                    <md-tooltip md-direction="bottom">Code</md-tooltip>
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                </md-button>
-                <md-button class="md-icon-button" aria-label="Share" href="https://www.youtube.com/watch?v=n_1Qv6dOwUs&t=28s" target="_blank">
-                    <md-tooltip md-direction="bottom">Video Demo</md-tooltip>
-                    <i class=" fa fa-video-camera fa-2x" aria-hidden=" true"></i>
-                </md-button>
-                <md-button href="https://johnny-four.firebaseapp.com/" target="_blank">Open App</md-button>
-            </md-card-actions>
-        </md-card>
-    </div>
-</md-content>
-<footer>
-    <md-toolbar layout="row" layout-align="center center">
-        <small flex="85">&copy; 2017</small>
-        <div class="icon-row" flex="10">
-            <md-icon flex class="icons">
-                <a href="https://www.linkedin.com/in/murphgrainger" target="_blank">
-                    <i class=" fa fa-linkedin-square fa-2x" aria-hidden=" true"></i>
-                </a>
-            </md-icon>
-            <md-icon flex class="icons">
-                <a href="https://github.com/murphgrainger" target="_blank">
-                    <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
-                </a>
-            </md-icon>
-        </div>
-    </md-toolbar>
-</footer>
-</md-content>
+</header>
+<div class="middle">
+<img src="../images/mockupFINAL.jpg" alt="">
+</div>
+<div class="sign-up">
+<md-button aria-label="About" class="md-raised nav-button beta">
+    <a>
+        Beta Test the App
+    </a>
+</md-button>
+</div>

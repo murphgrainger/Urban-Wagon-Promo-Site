@@ -5,112 +5,65 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0px;
+  background: #72716D;
 }
 
 #logo {
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  padding-top: 1em;
-  height: 4em;
-  padding-left: 1em;
-  padding-right: 1em;
+  width: 50%;
 }
 
-.jumbotron {
-  height: 25em;
-  overflow: hidden!important;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-video#bgvid {
-    top: 50%;
-    left: 50%;
-    /*width: 100%;*/
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(0) translateY(-40%);
-    -moz-transform: translateX(0) translateY(-40%);
-    -webkit-transform: translateX(0) translateY(-40%);
-    transform: translateX(0) translateY(-40%);
-    background-size: cover;
-    opacity: .3;
-    filter: grayscale(100%);
-
-}
-
-.md-toolbar-tools {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  padding-top: 1em;
-}
-
-.icon-row {
-  height: 100%;
+.navbars {
   display: flex;
-  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
 }
 
-.icons {
-  margin-right: .5em;
-  margin-left: .5em;
-  margin-bottom: .5em;
+.button-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1em;
 }
 
-a .fa {
-color: #444444;
+.nav-button {
+  background-color: #F7B233!important;
 }
 
-.fa-github-square:hover, .fa-linkedin-square:hover {
-    color: black;
-    box-shadow: 1px;
+.nav-button a {
+  text-decoration: none;
+  color: #72716D!important;
 }
 
-#about {
-  background-color: black;
-  color: #83d1e0;
-  padding: 2em;
+.middle img {
+  width: 100%;
 }
 
-.about h2 {
-  margin-top: 0;
-  padding-top: .95em;
-  font-size: 5em;
-  margin-bottom: .25em;
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
 }
 
-.about p {
-  font-size: 1.55em;
-  margin-right: 20em;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+.sign-up .beta {
+  background-color: #6AC669!important;
 }
 
-@media only screen and (max-width: 634px) {
-  .about h2 { font-size: 4em;}
-   .about p { font-size: 1.1em; margin-right: 5em;}
-}
-
-@media only screen and (max-width: 770px) and (min-width: 635px) {
-  .about h2 { font-size: 4em;}
-   .about p { font-size: 1.5em; margin-right: 5em;}
-}
-
-@media only screen and (max-width: 1084px) and (min-width:769px) {
-   .about p { font-size: 1.5em; margin-right: 10em;}
-}
-
-.work {
-  background-color: #83d1e0;
-}
-
-md-card-content p {
-  font-weight: 300;
-}
-
-.technologies {
-  font-weight: 500;
-  font-size: .8em;
-}
+/*$colors: (
+  primary:    #387ef5,
+  secondary:  #32db64,
+  danger:     #FFFF4C,
+  light:      #f4f4f4,
+  dark:       #363A36,
+  yel:        #E8D8A7,
+  yelacc:     #AFA687,
+  drkyel:     #FFE589,
+  ora:        #F7B233,
+  dan:        #B74949,
+  gra:        #B4BDC4,
+  drkgra:     #72716D,
+  gre:        #6AC669,
+  drktext:    #30302E
+);*/
