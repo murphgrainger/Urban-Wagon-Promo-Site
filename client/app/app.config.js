@@ -24,7 +24,7 @@
             'A700': '#2da0b6'
         };
 
-      
+
         $mdThemingProvider
             .definePalette('myTheme',
                 myTheme);

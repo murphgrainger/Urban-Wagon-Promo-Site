@@ -1,28 +1,45 @@
 <header class="header">
-    <div class="navbars">
+    <div class="logo-container">
         <img src="../images/urban_wagon_logo.png" alt="" id="logo">
-        <div class="button-row">
-            <md-button aria-label="About" class="md-raised nav-button">
-                <a href="http://www.murphgrainger.com/" target="_blank">
-                    Developer Site
-                </a>
-            </md-button>
-            <md-button aria-label="Code" class="md-raised nav-button">
-                <a href="https://github.com/murphgrainger/Urban-Wagon" target="_blank">
-                    App Code
-                </a>
-            </md-button>
-        </div>
+    </div>
+    <div class="nav-buttons">
+        <md-button aria-label="About" class="md-raised nav-button">
+            <a href="http://www.murphgrainger.com/" target="_blank">
+                Developer Site
+            </a>
+        </md-button>
+        <md-button aria-label="Code" class="md-raised nav-button">
+            <a href="https://github.com/murphgrainger/Urban-Wagon" target="_blank">
+                App Code
+            </a>
+        </md-button>
     </div>
 </div>
 </header>
-<div class="middle">
-<img src="../images/mockupFINAL.jpg" alt="">
-</div>
 <div class="sign-up">
-<md-button aria-label="About" class="md-raised nav-button beta">
-    <a>
-        Beta Test the App
-    </a>
-</md-button>
+<md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding class="form">
+    <form name="betaForm" ng-submit="$ctrl.formSubmit($ctrl.user)" novalidate>
+        <h2>Sign Up to Beta Test</h2>
+        <div>
+            <md-input-container>
+                <label>First Name</label>
+                <input ng-model="$ctrl.user.firstname">
+            </md-input-container>
+            <md-input-container>
+                <label>Last Name</label>
+                <input ng-model="$ctrl.user.lastname">
+            </md-input-container>
+        </div>
+        <md-input-container>
+            <label>Email</label>
+            <input ng-model="$ctrl.user.email" type="email">
+        </md-input-container>
+        <md-button aria-label="Code" type="submit" class="md-raised nav-button">
+            Sign Up
+        </md-button>
+    </form>
+</md-content>
 </div>
+<footer>
+<p>2017 Murph Grainger</p>
+</footer>

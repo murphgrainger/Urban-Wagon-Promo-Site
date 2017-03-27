@@ -8,23 +8,41 @@ body {
   background: #72716D;
 }
 
-#logo {
+.logo-container {
   width: 50%;
-}
-
-.navbars {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  margin: 2em;
+  padding-left: 2em;
 }
 
-.button-row {
+#logo {
+  width: 8vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+}
+
+footer {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  padding: 1em;
+  height: 10vh;
+  color: white;
+}
+
+footer p {
+  line-height: 1em;
+}
+
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
 }
 
 .nav-button {
@@ -36,20 +54,38 @@ body {
   color: #72716D!important;
 }
 
-.middle img {
-  width: 100%;
-}
 
 .sign-up {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2em;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em;
+  width: 100%;
+  background: #434842;
+  height: 78vh;
+  background-image: url(../images/mockupFINAL.jpg);
+  background-position: 50% 45%;
+  background-size: cover;
+}
+
+h2 {
+  text-align: center;
+  color: #72716D;
+}
+
+h3 {
+  font-size: 4em;
 }
 
 .sign-up .beta {
   background-color: #6AC669!important;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /*$colors: (
   primary:    #387ef5,
