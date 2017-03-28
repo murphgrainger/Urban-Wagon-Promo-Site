@@ -66,6 +66,7 @@ footer p {
   background-image: url(../images/mockupFINAL.jpg);
   background-position: 50% 45%;
   background-size: cover;
+  position: fixed;
 }
 
 h2 {
